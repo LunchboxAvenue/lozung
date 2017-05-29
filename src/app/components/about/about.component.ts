@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
 })
 
 export class AboutComponent { 
-    public mainImagePath: string = '/assets/images/about/mjasnaja_lavka.jpg';
+    public mainImagePath: string = 'assets/images/about/mjasnaja_lavka.jpg';
 }
