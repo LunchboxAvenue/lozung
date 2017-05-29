@@ -31,7 +31,7 @@ import { Component, Input } from '@angular/core';
 
 export class ModalComponent {
     public visible = false;
-    private visibleAnimate = false;
+    public visibleAnimate = false;
     public imageLink;
 
     constructor() { }
