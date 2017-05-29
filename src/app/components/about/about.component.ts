@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
     templateUrl: './about.component.html'
 })
 
-export class AboutComponent { }
+export class AboutComponent { 
+    public mainImagePath: string = '/assets/images/about/mjasnaja_lavka.jpg';
+}

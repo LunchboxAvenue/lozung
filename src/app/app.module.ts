@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './components/navmenu/navmenu.component';
+import { ModalComponent } from './components/modal/modal.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { WorksComponent } from './components/works/works.component';
@@ -13,6 +14,7 @@ import { WorksComponent } from './components/works/works.component';
   declarations: [
     AppComponent,
     NavMenuComponent,
+    ModalComponent,
     HomeComponent,
     AboutComponent,
     WorksComponent

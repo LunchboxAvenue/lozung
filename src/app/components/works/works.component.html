@@ -1,1 +1,31 @@
-works page
+<div class="row">
+ <div class="col-md-2">
+   <img class="img-responsive" (click)="modal.show('/assets/images/works/test1.jpg')" src="/assets/images/works/test1.jpg" style="cursor:pointer"/>
+   <div class="caption text-center">29/05/2017</div>
+ </div>
+ <div class="col-md-2">
+   <img class="img-responsive" src="/assets/images/works/test1.jpg" />
+ </div>
+
+ <div class="col-md-2">
+   <img class="img-responsive" src="/assets/images/works/test1.jpg" />
+ </div>
+ <div class="col-md-2">
+   <img class="img-responsive" src="/assets/images/works/test1.jpg" />
+ </div>
+ <div class="col-md-2">
+   <img class="img-responsive" src="/assets/images/works/test1.jpg" />
+ </div>
+</div>
+
+<app-modal #modal>
+    <div class="app-modal-header">
+        Title goes here
+    </div>
+    <div class="app-modal-body">
+        <img [src]="modal.imageLink" class="img-responsive" alt="xyz">
+    </div>
+    <div class="app-modal-footer">
+        <button type="button" class="btn btn-default" (click)="modal.hide()">Close</button>
+    </div>
+</app-modal>
