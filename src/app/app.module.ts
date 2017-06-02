@@ -9,6 +9,7 @@ import { ModalComponent } from './components/modal/modal.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { WorksComponent } from './components/works/works.component';
+import { TRANSLATION_PROVIDERS, TranslatePipe, TranslateService } from './translate';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { WorksComponent } from './components/works/works.component';
     ModalComponent,
     HomeComponent,
     AboutComponent,
-    WorksComponent
+    WorksComponent,
+    TranslatePipe
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,10 @@ import { WorksComponent } from './components/works/works.component';
             { path: '**', redirectTo: 'home' }
         ])
   ],
-  providers: [],
+  providers: [ 
+    TRANSLATION_PROVIDERS, 
+    TranslateService 
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
