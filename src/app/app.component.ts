@@ -30,13 +30,11 @@ export class AppComponent implements OnInit {
   }
 
   selectLang(lang: string) {
-      console.log('component selectLang', lang);
       this._translate.use(lang);
       this.refreshText();
   }
 
   refreshText() {
-      console.log('refresh text');
       this.translatedText = this._translate.instant('hello world');
   }
 }

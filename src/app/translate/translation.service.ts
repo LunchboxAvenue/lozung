@@ -1,5 +1,3 @@
-// code from https://scotch.io/tutorials/simple-language-translation-in-angular-2-part-1
-
 import { Injectable, Inject } from '@angular/core';
 import { TRANSLATIONS } from './translation';
 
@@ -20,8 +18,13 @@ export class TranslateService {
 
     private translate(key: string): string {
         let translation = key;
+        //console.log('translate:', key);
+        console.log('translations: ', this._translations);
+        console.log('current language: ', this.currentLang);
+        console.log('current key', key);
 
         if (this._translations[this.currentLang] && this._translations[this.currentLang][key]) {
+            console.log('getting translation. . . ');
             return this._translations[this.currentLang][key];
         }
 
@@ -30,6 +33,7 @@ export class TranslateService {
 
     public instant(key: string) {
         // call translation
+        console.log('instant', key);
         return this.translate(key); 
     }
 }
