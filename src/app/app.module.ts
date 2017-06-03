@@ -9,7 +9,6 @@ import { ModalComponent } from './components/modal/modal.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { WorksComponent } from './components/works/works.component';
-import { TRANSLATION_PROVIDERS } from './translate/translation';
 import { TranslatePipe } from './translate/translate.pipe';
 import { TranslateService } from './translate/translation.service';
 
@@ -36,7 +35,6 @@ import { TranslateService } from './translate/translation.service';
         ])
   ],
   providers: [ 
-    TRANSLATION_PROVIDERS, 
     TranslateService 
   ],
   bootstrap: [AppComponent]

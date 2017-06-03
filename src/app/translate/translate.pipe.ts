@@ -11,7 +11,6 @@ export class TranslatePipe implements PipeTransform {
     constructor(private _translate: TranslateService) {}
 
     transform(value: string, args: any[]) : any {
-        console.log('transform from pipe, ', value);
         if (!value) return;
         return this._translate.instant(value);
     }
